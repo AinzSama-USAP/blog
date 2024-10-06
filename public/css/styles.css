@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(3, 29, 56);
+}
+
+/* -----------------------------------------------Navbar negro --------------------------------------------------*/
+.navbar-green {
+    background-color: #000000; 
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar-green .download-btn {
+    color: white;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.navbar-green .download-btn:hover {
+    background-color: #000000;
+    color: white;
+}
+/*-----------------------------------------------fin del navbar negro---------------------------------------------*/
+
+/* --------------------------------------------navbar azul dentro del header------------------------------------*/
+header {
+    background-color: #0979e2;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 0px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar .menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 0px; 
+    font-size: 14px;
+    padding: 18px 15px;
+    position: relative; 
+    align-items: center;
+}
+
+.navbar .menu a::after {
+    content: ""; 
+    position: absolute;
+    right: 0; 
+    top: 10%; 
+    height: 80%; 
+    width: 1px; 
+    background-color: rgb(255, 255, 255); 
+}
+
+.navbar .menu a:last-child::after {
+    display: none; 
+}
+
+.navbar .menu a:hover {
+    background-color: #ffffff57; 
+}
+
+/* --------------------------------------fin de los estilos navbar negro-------------------------------------*/
+
+/* --------------------------------------estilos para el search section ------------------------------------*/
+
+.search-section {
+    padding: 20px;
+    text-align: center;
+} /*esto es para la barra de busqueda*/
+
+.search-section input,
+.search-section select,
+.search-section button {
+    padding: 10px;
+    border: 2px solid #0979e2;
+    border-radius: 5px;
+    font-size: 16px;
+} /*alineacion de los objetos*/
+
+.search-section input {
+    width: 500px;
+    height: 70px;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-section select {
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    color: #555;
+}
+
+.search-section button {
+    background-color: #0979e2;
+    color: white;
+    height: 70px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.search-section button:hover {
+    background-color: #3f8bee;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}/* alineacion de todos*/
+
+.search-section select:focus, .search-section input:focus {
+    outline: none;
+}
+
+/*-------------------------------------------fin de los estilos del search section------------------------*/
+
+/* ------------------------------------------texto centrado ----------------------------------------------*/
+
+.centered-title {
+    font-size: 48px; 
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+/*-------------------------------------------fin de texto centrado--------------------------------------------*/
+
+/*--------------------------------------------estilos para las cards -----------------------------------------*/
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+
+.green-label {
+    background-color: #28a745;
+}
+
+.blue-label {
+    background-color: #007bff;
+}
+
+.red-label {
+    background-color: #dc3545;
+}
+
+.read-more {
+    padding: 10px; 
+    text-align: right; 
+    margin-top: 15px; 
+}
+
+.read-more a {
+    color: blue;
+    font-size: 12px; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.read-more a:hover {
+    text-decoration: underline; 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-section input {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar h1 {
+        margin-bottom: 15px;
+    }
+}
